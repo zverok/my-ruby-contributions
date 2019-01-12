@@ -1,4 +1,6 @@
-Patreon
+# Contributing to Ruby
+
+[![Patreon](https://img.shields.io/badge/patreon-donate-blue.svg)](https://www.patreon.com/zverok)
 
 This repository (in fact, just README) contains and tracks my ([zverok aka Victor Shepelev](https://zverok.github.io)) contributions to discussing/changing of the Ruby programming language. It links to [Ruby bug tracker](https://bugs.ruby-lang.org/) discussions of things I've contributed and proposed and their current status. Rejected/ignored proposals are eventually removed from the list.
 
