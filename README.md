@@ -7,7 +7,7 @@ This repository (in fact, just README) contains and tracks my ([zverok aka Victo
 Goals of this list is:
 
 * Public **tracking** of this part of my work (it is not easy in Redmine to summarize what are currently in progress and what is solved and how);
-* **Encouragement** for others to participate in Ruby development: hopefully, my example (I am not a ruby-core member, or some rockstar, or personal acquitance of any of the maintainers) will show that it is possible and meaningful for **any** of us to make a difference;
+* **Encouragement** for others to participate in Ruby development: hopefully, my example will show that it is possible and meaningful for **any** of us to make a difference;
 * **Exposure** of my work on Ruby, however insignificant it is: with primary Ruby development being led in Redmine and SVN, it is pretty hard to point at "what exactly I did", and, well, I am mere mortal and sometimes just being proud.
 
 ## Ruby features
@@ -27,16 +27,16 @@ Goals of this list is:
 * [`Method#inspect`](https://bugs.ruby-lang.org/issues/14145) (current status: Matz agreed, **I'll implement it**)
 * [Default gems README](https://bugs.ruby-lang.org/issues/15486) (current status: active discussion)
 * [Clarify default gems maintanance policy](https://bugs.ruby-lang.org/issues/15487) (current status: active discussion)
-* [`Proc#<<` and `#>>` redesign](https://bugs.ruby-lang.org/issues/15428) (current status: conflict)
+* [`Proc#<<` and `#>>` redesign](https://bugs.ruby-lang.org/issues/15428) (current status: discussion)
 * [Redesign of timezone object requirements](https://bugs.ruby-lang.org/issues/15527) (current status: new ticket)
 
-### Participated in discussions
+### Contributed to discussions
 
 (The cases where I was not an author of initial proposal, but believe my contribution/pushing for solution was significant enough)
 
-* **2.5**: [`Kernel#yield_self`](https://bugs.ruby-lang.org/issues/6721) -- I don't like the name, but for several monthes pushed for "we should have this method, whatever name you choose" :)
+* **2.5**: [`Kernel#yield_self`](https://bugs.ruby-lang.org/issues/6721) -- I don't like the name, but for several months pushed for "we should have this method, whatever name you choose" :)
 * **2.7?**: [Syntax sugar for method reference](https://bugs.ruby-lang.org/issues/13581): seems `.:` is finally accepted for 2.7
-* Pattern matching discussions: [latest ticket](https://bugs.ruby-lang.org/issues/14912), [mine latest proposal](https://bugs.ruby-lang.org/issues/14913), [one of discussions raised by me](https://bugs.ruby-lang.org/issues/14709)
+* Pattern matching discussions: [latest ticket](https://bugs.ruby-lang.org/issues/14912), [mine latest proposal](https://bugs.ruby-lang.org/issues/14913), [one of the discussions initiated by me](https://bugs.ruby-lang.org/issues/14709)
 
 ## Documenting Ruby
 
@@ -57,9 +57,12 @@ Goals of this list is:
 * **trunk**: [`NoMethodError`/`NameError` new arguments](https://bugs.ruby-lang.org/issues/15481)
 * **trunk**: [`RubyVM.resolve_feature_path`](https://bugs.ruby-lang.org/issues/15482)
 * **trunk**: [`Kernel#BigDecimal(exception: false)`](https://github.com/ruby/bigdecimal/pull/117)
+* **trunk**: [`BigDecimal::Jacobian` -- fix invisible docs](https://github.com/ruby/bigdecimal/pull/130)
 
 ### Pending
 
 * [`TracePoint#enable`](https://bugs.ruby-lang.org/issues/15484)
 * [JSON](https://github.com/flori/json/pull/349): hide irrelevant parts of docs
 * [JSON: enhance generic `JSON` and `#generate` docs](https://github.com/flori/json/pull/347)
+* [`Bundler` entire stdlib](https://bugs.ruby-lang.org/issues/15528) -- discussion, not patch
+* [`Enumerator::Lazy`](https://bugs.ruby-lang.org/issues/15529)
