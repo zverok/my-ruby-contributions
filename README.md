@@ -20,7 +20,7 @@ Goals of this list is:
 * **2.6**: [`CSV::Row#each_pair`](https://github.com/ruby/csv/pull/33) for compatibility with `OpenStruct`
 
 ### Pending
-* [`Symbol#call`](https://bugs.ruby-lang.org/issues/15301) (current status: "Matz: Interesting idea of partial evaluation, but `call` is too generic, and could cause confusion. I am not positive about the expression.")
+
 * [`Comparambe#clamp` with a range](https://bugs.ruby-lang.org/issues/14784) (current status: "akr: we have to consider many corner cases if accepting Range.  Request for feedback.")
 * [`Enumerator#generate`](https://bugs.ruby-lang.org/issues/14781) (current status: core team loves the proposal, unsure about the name)
 * [Startless range](https://bugs.ruby-lang.org/issues/14799) (current status: "Matz: try it")
@@ -28,7 +28,7 @@ Goals of this list is:
 * [Default gems README](https://bugs.ruby-lang.org/issues/15486) (current status: active discussion)
 * [Clarify default gems maintanance policy](https://bugs.ruby-lang.org/issues/15487) (current status: active discussion)
 * [`Proc#<<` and `#>>` redesign](https://bugs.ruby-lang.org/issues/15428) (current status: discussion)
-* [Redesign of timezone object requirements](https://bugs.ruby-lang.org/issues/15527) (current status: new ticket)
+* [Redesign of timezone object requirements](https://bugs.ruby-lang.org/issues/15527) (current status: discussion)
 
 ### Contributed to discussions
 
@@ -66,3 +66,4 @@ Goals of this list is:
 * [JSON: enhance generic `JSON` and `#generate` docs](https://github.com/flori/json/pull/347)
 * [`Bundler` entire stdlib](https://bugs.ruby-lang.org/issues/15528) -- discussion, not patch
 * [`Enumerator::Lazy`](https://bugs.ruby-lang.org/issues/15529)
+* [fileutils](https://github.com/ruby/fileutils/pull/33): facelift module docs and fix some bugs;
