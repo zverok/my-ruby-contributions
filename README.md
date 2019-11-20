@@ -18,14 +18,15 @@ Goals of this list is:
 * **2.6**: [`Enumerable#chain`](https://bugs.ruby-lang.org/issues/15144)
 * **2.6**: [`Range#===`](https://bugs.ruby-lang.org/issues/14575) to use `cover?` instead of `include?`
 * **2.6**: [`CSV::Row#each_pair`](https://github.com/ruby/csv/pull/33) for compatibility with `OpenStruct`
-* **2.7** [`Comparambe#clamp` with a range](https://bugs.ruby-lang.org/issues/14784): `1.clamp(0..100)`, `1.clamp(5..)`, `1.clamp(..18)`
-* **2.7** [`Enumerator#produce`](https://bugs.ruby-lang.org/issues/14781)
-* **2.7** [Startless range](https://bugs.ruby-lang.org/issues/14799)
-* **2.7** [`Date#inspect` simplified](https://github.com/ruby/date/pull/12) (could be reverted)
+* **2.7**: [`Comparambe#clamp` with a range](https://bugs.ruby-lang.org/issues/14784): `1.clamp(0..100)`, `1.clamp(5..)`, `1.clamp(..18)`
+* **2.7**: [`Enumerator#produce`](https://bugs.ruby-lang.org/issues/14781)
+* **2.7**: [Startless range](https://bugs.ruby-lang.org/issues/14799)
+* ~**2.7**: [`Date#inspect` simplified](https://github.com/ruby/date/pull/12)~ (reverted)
+* **2.7**: [`Method#inspect`](https://bugs.ruby-lang.org/issues/14145)
+
 
 ### Pending
 
-* [`Method#inspect`](https://bugs.ruby-lang.org/issues/14145)
 * [Default gems README](https://bugs.ruby-lang.org/issues/15486)
 * [Clarify default gems maintanance policy](https://bugs.ruby-lang.org/issues/15487)
 * [Redesign of timezone object requirements](https://bugs.ruby-lang.org/issues/15527)
@@ -40,7 +41,7 @@ Goals of this list is:
 (The cases where I was not an author of initial proposal, but believe my contribution/pushing for solution was significant enough)
 
 * **2.5**: [`Kernel#yield_self`](https://bugs.ruby-lang.org/issues/6721) -- I don't like the name, but for several months pushed for "we should have this method, whatever name you choose" :)
-* **2.7?**: [Syntax sugar for method reference](https://bugs.ruby-lang.org/issues/13581): seems `.:` is finally accepted for 2.7 (but still [can be reverted](https://bugs.ruby-lang.org/issues/16275))
+* ~**2.7**: [Syntax sugar for method reference](https://bugs.ruby-lang.org/issues/13581): seems `.:` is finally accepted for 2.7~ (ugh, [reverted](https://bugs.ruby-lang.org/issues/16275))
 
 ## Minor clarifications and bugs
 
@@ -73,12 +74,12 @@ Goals of this list is:
 * **trunk**: [fileutils](https://github.com/ruby/fileutils/pull/33): facelift module docs and fix some bugs;
 * **trunk**: [group of small fixes of formatting in core docs](https://bugs.ruby-lang.org/issues/16126)
 * **trunk**: [group of larger fixes](https://github.com/ruby/ruby/pull/2612): toplevel `return`, full comments syntax explanation, `rescue` in blocks, better docs for `chomp:` option, `Object#to_enum`, `Proc#>>` and `#<<`, `Process` module
+* **trunk**: [Matrix: slightly enhance docs](https://github.com/ruby/matrix/pull/11)
+* **trunk**: [group of stdlib documentation fixes](https://github.com/ruby/ruby/pull/2615): ERB, StringIO, IRB, Net::FTP, open-uri, OptionParser, Net::HTTP
+* **trunk**: [`Bundler` entire stdlib](https://github.com/bundler/bundler/pull/7394)
 
 ### Pending
 
-* [group of stdlib documentation fixes](https://github.com/ruby/ruby/pull/2615): ERB, StringIO, IRB, Net::FTP, open-uri, OptionParser, Net::HTTP
-* [`Bundler` entire stdlib](https://github.com/bundler/bundler/pull/7394)
 * [JSON](https://github.com/flori/json/pull/349): hide irrelevant parts of docs
 * [JSON: enhance generic `JSON` and `#generate` docs](https://github.com/flori/json/pull/347)
-* [Matrix: slightly enhance docs](https://github.com/ruby/matrix/pull/11)
 * [Webrick: document Proc body for Response](https://github.com/ruby/webrick/pull/35)
