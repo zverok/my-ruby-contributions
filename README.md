@@ -77,9 +77,9 @@ Goals of this list is:
 * **trunk**: [Matrix: slightly enhance docs](https://github.com/ruby/matrix/pull/11)
 * **trunk**: [group of stdlib documentation fixes](https://github.com/ruby/ruby/pull/2615): ERB, StringIO, IRB, Net::FTP, open-uri, OptionParser, Net::HTTP
 * **trunk**: [`Bundler` entire stdlib](https://github.com/bundler/bundler/pull/7394)
+* **trunk**: [Webrick: document Proc body for Response](https://github.com/ruby/webrick/pull/35)
 
 ### Pending
 
 * [JSON](https://github.com/flori/json/pull/349): hide irrelevant parts of docs
 * [JSON: enhance generic `JSON` and `#generate` docs](https://github.com/flori/json/pull/347)
-* [Webrick: document Proc body for Response](https://github.com/ruby/webrick/pull/35)
