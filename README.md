@@ -25,6 +25,9 @@ Goals of this list is:
   * [Beginless range](https://bugs.ruby-lang.org/issues/14799)
   * [`Method#inspect`](https://bugs.ruby-lang.org/issues/14145)
   * ~[`Date#inspect` simplified](https://github.com/ruby/date/pull/12)~ (reverted)
+* **master**:
+  * [`Symbol#to_proc` lambdiness](https://bugs.ruby-lang.org/issues/16260)
+
 
 ### Pending
 
@@ -32,12 +35,7 @@ Goals of this list is:
 * [Clarify default gems maintanance policy](https://bugs.ruby-lang.org/issues/15487)
 * [Redesign of timezone object requirements](https://bugs.ruby-lang.org/issues/15527)
 * [`Struct::Value` immutable value object](https://bugs.ruby-lang.org/issues/16122)
-* [Callable istance method instead of `Symbol#to_proc`](https://bugs.ruby-lang.org/issues/16122)
-* [`Enumerable#each_splat`](https://bugs.ruby-lang.org/issues/16261)
-* [`Symbol#to_proc` lambdiness](https://bugs.ruby-lang.org/issues/16260)
 * [`Dir#empty?` and `File#empty?`](https://bugs.ruby-lang.org/issues/16249)
-* [`Array#to_proc`](https://bugs.ruby-lang.org/issues/16435)
-* [`Enumerable#take_while_after`](https://bugs.ruby-lang.org/issues/16441)
 * [Pattern matching deconstruction for various core objects](https://bugs.ruby-lang.org/issues/16464)
 
 ### Contributed to discussions
@@ -88,9 +86,12 @@ Goals of this list is:
   * [Small final pre-2.7 changes](https://github.com/ruby/ruby/pull/2768)
   * [`Module#const_source_location`](https://github.com/ruby/ruby/pull/2750)
   * ~[`RubyVM.resolve_feature_path`](https://bugs.ruby-lang.org/issues/15482)~ (the feature is moved to `$LOAD_PATH`)
+* **master**:
+  * [Pattern matching](https://github.com/ruby/ruby/pull/2786)
+  * [JSON](https://github.com/flori/json/pull/349): hide irrelevant parts of docs
+  * [JSON: enhance generic `JSON` and `#generate` docs](https://github.com/flori/json/pull/347)
 
 ### Pending
 
-* [Pattern matching](https://github.com/ruby/ruby/pull/2786)
-* [JSON](https://github.com/flori/json/pull/349): hide irrelevant parts of docs
-* [JSON: enhance generic `JSON` and `#generate` docs](https://github.com/flori/json/pull/347)
+—
+
