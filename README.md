@@ -50,7 +50,8 @@ Goals of this list is:
 * **2.7** [Deprecate](https://bugs.ruby-lang.org/issues/15893) `Kernel#open` provided by `open-uri` in favor of more explicit `URI.open`
 * **2.7** [`Time#dst?` bug for time with real timezone](https://bugs.ruby-lang.org/issues/15988)
 * **2.7** [`IO#set_encoding_by_bom` raising on already set encoding](https://bugs.ruby-lang.org/issues/16422)
-* **???** [`Object.clone(freeze: true)`](https://bugs.ruby-lang.org/issues/16175)
+* **master** [`Object.clone(freeze: true)`](https://bugs.ruby-lang.org/issues/16175)
+* [`StringIO#internal_encoding` is broken](https://bugs.ruby-lang.org/issues/16497)
 
 ## Documenting Ruby
 
