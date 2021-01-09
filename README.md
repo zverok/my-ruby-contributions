@@ -14,61 +14,60 @@ Goals of this list is:
 
 ### Accepted
 
-* **Ruby 2.6**:
-  * [`Kernel#then`](https://bugs.ruby-lang.org/issues/14594) as a synonym (better name) for `#yield_self` ([context](https://zverok.github.io/blog/2018-03-23-yield_self2.html))
-  * [`Enumerable#chain`](https://bugs.ruby-lang.org/issues/15144)
-  * [`Range#===`](https://bugs.ruby-lang.org/issues/14575) to use `cover?` instead of `include?`
-  * [`CSV::Row#each_pair`](https://github.com/ruby/csv/pull/33) for compatibility with `OpenStruct`
+* **master**:
+  * [`Enumerable#compact` and `Enumerator::Lazy#compact`](https://bugs.ruby-lang.org/issues/17312)
+* **Ruby 3.0**:
+  * [`Symbol#to_proc` lambdiness](https://bugs.ruby-lang.org/issues/16260)
+  * [Array slicing with `ArithmeticSequence`](https://bugs.ruby-lang.org/issues/16812)
 * **Ruby 2.7**:
   * [`Comparambe#clamp` with a range](https://bugs.ruby-lang.org/issues/14784): `1.clamp(0..100)`, `1.clamp(5..)`, `1.clamp(..18)`
   * [`Enumerator#produce`](https://bugs.ruby-lang.org/issues/14781)
   * [Beginless range](https://bugs.ruby-lang.org/issues/14799)
   * [`Method#inspect`](https://bugs.ruby-lang.org/issues/14145)
   * ~[`Date#inspect` simplified](https://github.com/ruby/date/pull/12)~ (reverted)
-* **master**:
-  * [`Symbol#to_proc` lambdiness](https://bugs.ruby-lang.org/issues/16260)
-
+* **Ruby 2.6**:
+  * [`Kernel#then`](https://bugs.ruby-lang.org/issues/14594) as a synonym (better name) for `#yield_self` ([context](https://zverok.github.io/blog/2018-03-23-yield_self2.html))
+  * [`Enumerable#chain`](https://bugs.ruby-lang.org/issues/15144)
+  * [`Range#===`](https://bugs.ruby-lang.org/issues/14575) to use `cover?` instead of `include?`
+  * [`CSV::Row#each_pair`](https://github.com/ruby/csv/pull/33) for compatibility with `OpenStruct`
 
 ### Pending
 
-* [Default gems README](https://bugs.ruby-lang.org/issues/15486)
-* [Clarify default gems maintanance policy](https://bugs.ruby-lang.org/issues/15487)
-* [Redesign of timezone object requirements](https://bugs.ruby-lang.org/issues/15527)
 * [`Struct::Value` immutable value object](https://bugs.ruby-lang.org/issues/16122)
 * [`Dir#empty?` and `File#empty?`](https://bugs.ruby-lang.org/issues/16249)
 * [Pattern matching deconstruction for various core objects](https://bugs.ruby-lang.org/issues/16464)
+* [`Object#non`](https://bugs.ruby-lang.org/issues/17330)
+* [Documentation backporting problem](https://bugs.ruby-lang.org/issues/17499)
 
 ### Contributed to discussions
 
 (The cases where I was not an author of initial proposal, but believe my contribution/pushing for solution was significant enough)
 
-* **2.5**: [`Kernel#yield_self`](https://bugs.ruby-lang.org/issues/6721) -- I don't like the name, but for several months pushed for "we should have this method, whatever name you choose" :)
+* **3.0**: [`Hash#except`](https://bugs.ruby-lang.org/issues/15822)
 * ~**2.7**: [Syntax sugar for method reference](https://bugs.ruby-lang.org/issues/13581): seems `.:` is finally accepted for 2.7~ (ugh, [reverted](https://bugs.ruby-lang.org/issues/16275))
+* **2.5**: [`Kernel#yield_self`](https://bugs.ruby-lang.org/issues/6721) -- I don't like the name, but for several months pushed for "we should have this method, whatever name you choose" :) Then we renamed it to `#then` in 2.6
 
 ## Minor clarifications and bugs
 
+* **3.0** [`Object.clone(freeze: true)`](https://bugs.ruby-lang.org/issues/16175)
 * **2.7** [Deprecate](https://bugs.ruby-lang.org/issues/15893) `Kernel#open` provided by `open-uri` in favor of more explicit `URI.open`
 * **2.7** [`Time#dst?` bug for time with real timezone](https://bugs.ruby-lang.org/issues/15988)
 * **2.7** [`IO#set_encoding_by_bom` raising on already set encoding](https://bugs.ruby-lang.org/issues/16422)
-* **master** [`Object.clone(freeze: true)`](https://bugs.ruby-lang.org/issues/16175)
 * [`StringIO#internal_encoding` is broken](https://bugs.ruby-lang.org/issues/16497)
+* [Necessity of `require 'fiber'`](https://bugs.ruby-lang.org/issues/17407)
 
 ## Documenting Ruby
 
 ### Merged
 
-* **Ruby 2.6**:
-  * [`&.`](https://bugs.ruby-lang.org/issues/15109)
-  * [`Kernel#yield_self`](https://bugs.ruby-lang.org/issues/1443)
-  * [`Method`](https://bugs.ruby-lang.org/issues/14483)
-  * [`YAML`](https://bugs.ruby-lang.org/issues/14567) (explanation of aliasing to `Psych`)
-  * [`MatchData`](https://bugs.ruby-lang.org/issues/14450)
-  * [`Proc`](https://bugs.ruby-lang.org/issues/14610)
-  * [`Endless range`](https://bugs.ruby-lang.org/issues/15405)
-  * [`Integer(exception: false)` and others](https://bugs.ruby-lang.org/issues/15452)
-  * [`Tempfile`](https://bugs.ruby-lang.org/issues/15411)
-  * [`Psych#dump`](https://github.com/ruby/psych/pull/351)
-  * [`CSV`: redesign main class docs](https://github.com/ruby/csv/pull/32)
+* **3.0**:
+  * [Full docs for non-blocking Fibers and scheduler](https://github.com/ruby/ruby/pull/3891)
+  * [New docs for `Fiber.transfer`](https://github.com/ruby/ruby/pull/3981)
+  * [Full class- and method-level docs for Ractors](https://github.com/ruby/ruby/pull/3895)
+  * [Update method definition docs to include `...` and one-line methods](https://github.com/ruby/ruby/pull/3997)
+  * [group of small fixes in 3.0 core docs](https://github.com/ruby/ruby/pull/3997)
+  * [JSON](https://github.com/flori/json/pull/349): hide irrelevant parts of docs
+  * [JSON: enhance generic `JSON` and `#generate` docs](https://github.com/flori/json/pull/347)
 * **Ruby 2.7**:
   * [`Kernel#system(exception: true)`](https://bugs.ruby-lang.org/issues/15480)
   * [`NoMethodError`/`NameError` new arguments](https://bugs.ruby-lang.org/issues/15481)
@@ -87,10 +86,19 @@ Goals of this list is:
   * [Small final pre-2.7 changes](https://github.com/ruby/ruby/pull/2768)
   * [`Module#const_source_location`](https://github.com/ruby/ruby/pull/2750)
   * ~[`RubyVM.resolve_feature_path`](https://bugs.ruby-lang.org/issues/15482)~ (the feature is moved to `$LOAD_PATH`)
-* **master**:
   * [Pattern matching](https://github.com/ruby/ruby/pull/2786)
-  * [JSON](https://github.com/flori/json/pull/349): hide irrelevant parts of docs
-  * [JSON: enhance generic `JSON` and `#generate` docs](https://github.com/flori/json/pull/347)
+* **Ruby 2.6**:
+  * [`&.`](https://bugs.ruby-lang.org/issues/15109)
+  * [`Kernel#yield_self`](https://bugs.ruby-lang.org/issues/1443)
+  * [`Method`](https://bugs.ruby-lang.org/issues/14483)
+  * [`YAML`](https://bugs.ruby-lang.org/issues/14567) (explanation of aliasing to `Psych`)
+  * [`MatchData`](https://bugs.ruby-lang.org/issues/14450)
+  * [`Proc`](https://bugs.ruby-lang.org/issues/14610)
+  * [`Endless range`](https://bugs.ruby-lang.org/issues/15405)
+  * [`Integer(exception: false)` and others](https://bugs.ruby-lang.org/issues/15452)
+  * [`Tempfile`](https://bugs.ruby-lang.org/issues/15411)
+  * [`Psych#dump`](https://github.com/ruby/psych/pull/351)
+  * [`CSV`: redesign main class docs](https://github.com/ruby/csv/pull/32)
 
 ### Pending
 
